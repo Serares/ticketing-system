@@ -1,4 +1,7 @@
 import express from 'express';
+// this library will help express catch error that
+// are thrown from inside async functions
+// without it we should use next(err)
 import 'express-async-errors';
 import { json } from 'body-parser';
 
@@ -31,7 +34,7 @@ app.use(errorHandler);
 // after the last fwd slash
 const start = async () => {
     try {
-        await mongoose.connect("mongodb://auth-mongo-srv:2707/auth");
+        await mongoose.connect("mongodb://auth-mongo-srv:27017/auth");
         console.log("Connected to mongo db");
     } catch (err) {
         console.log(err);
