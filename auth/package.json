@@ -33,7 +33,6 @@
   "description": "",
   "devDependencies": {
     "@types/jest": "^27.4.0",
-    "@types/mongoose": "^5.11.97",
     "@types/supertest": "^2.0.11",
     "jest": "^27.4.7",
     "mongodb-memory-server": "^8.2.0",
